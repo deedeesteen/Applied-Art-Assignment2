@@ -1,0 +1,314 @@
+/* Author: Dhana Steen
+    Date: OCtober 20, 2026 */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF8F5;
+    color: #492B34;
+    font-family: "Nunito", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4,
+.caption,
+.section-heading {
+    color: #6F263D;
+    font-family: "More Sugar", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+p, li, label, input, select, textarea, button {
+    font-family: "Nunito", Arial, sans-serif;
+}
+
+a {
+    color: #B83250;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: #6F263D;
+}
+
+/* NAVIGATION */
+.nav-bar,
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #F0C8D0;
+    box-shadow: 0 3px 12px rgba(111, 38, 61, 0.12);
+}
+
+.nav-menu a,
+.nav-links a {
+    color: #6F263D;
+    font-family: "Nunito", Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus,
+.nav-links a:hover,
+.nav-links a:focus {
+    color: white;
+    background-color: #B83250;
+}
+
+.nav-menu a.active,
+.nav-links a.active,
+.active {
+    color: #B83250;
+}
+
+.menu-icon {
+    color: #B83250;
+}
+
+/* HERO / BANNER IMAGES */
+.image,
+.hero,
+.banner,
+.container {
+    background-color: #FCE4E8;
+}
+
+.image img,
+.hero img,
+.about-image {
+    filter: saturate(0.88) contrast(0.98);
+}
+
+/* Soft rose overlay helps photos blend with the seasonal palette. */
+.image::after,
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(111, 38, 61, 0.38),
+        rgba(184, 50, 80, 0.12)
+    );
+    pointer-events: none;
+}
+
+.image .caption,
+.caption,
+.hero-content,
+.banner {
+    color: #bc2042;
+}
+
+.image .caption,
+.caption {
+    text-shadow: 0 2px 8px rgba(73, 43, 52, 0.45);
+    z-index: 2;
+}
+
+/* SECTIONS, CARDS AND FLOWER OPTIONS */
+.section,
+.card-section {
+    background-color: #FFF8F5;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.card,
+.flower-card,
+.feature,
+.contact-card,
+.info-box,
+.form-wrapper,
+.confirmation {
+    background-color: white;
+    border: 1px solid #F0C8D0;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(111, 38, 61, 0.12);
+}
+
+.card,
+.flower-card {
+    overflow: hidden;
+}
+
+.card img,
+.flower-card img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content,
+.flower-info {
+    color: #492B34;
+}
+
+.card h3,
+.flower-card h3,
+.feature h3 {
+    color: #6F263D;
+}
+
+.price {
+    color: #B83250;
+    font-weight: 800;
+}
+
+/* BUTTONS AND INTERACTIVE ELEMENTS */
+button,
+.btn,
+.form-submit,
+input[type="submit"],
+input[type="button"] {
+    background-color: #B83250;
+    color: white;
+    border: 1px solid #B83250;
+    border-radius: 28px;
+    font-family: "Nunito", Arial, sans-serif;
+    font-weight: 800;
+    padding: 11px 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+.form-submit:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #6F263D;
+    border-color: #6F263D;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #B83250;
+    border: 1px solid #B83250;
+}
+
+.btn-outline:hover {
+    background-color: #B83250;
+    color: white;
+}
+
+/* FORMS */
+input,
+select,
+textarea {
+    color: #492B34;
+    background-color: white;
+    border: 1px solid #F0C8D0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #E9A1AE;
+    border-color: #B83250;
+}
+
+label,
+.required {
+    color: #6F263D;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background-color: #6F263D;
+    color: white;
+}
+
+footer h3 {
+    color: #FCE4E8;
+}
+
+footer p,
+footer a,
+.footer-bottom {
+    color: white;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #E9A1AE;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* SMALL DECORATIVE DETAILS */
+.feature-icon,
+.confirmation-icon {
+    color: #B83250;
+}
+
+.check-list li::marker {
+    color: #B83250;
+}
+
+::selection {
+    background-color: #E9A1AE;
+    color: #6F263D;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media screen and (max-width: 900px) {
+    .nav-menu,
+    .nav-links {
+        background-color: white;
+    }
+
+    .nav-menu a,
+    .nav-links a {
+        display: inline-block;
+    }
+
+    .image,
+    .hero {
+        min-height: 320px;
+    }
+
+    .caption {
+        font-size: clamp(1.6rem, 5vw, 2.5rem);
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-grid,
+    .flower-grid,
+    .about-grid,
+    .info-grid,
+    .footer-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .image,
+    .hero {
+        height: 360px;
+    }
+}
